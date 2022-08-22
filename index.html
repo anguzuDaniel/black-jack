@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BlackJack</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- <script type="module" src="./src/js/controller.js" defer></script> -->
+		<link
+			rel="icon"
+			type="image/png"
+			href="src/images/vector-calligraphy-illustration-isolated-white-background_98908-696.jpg"
+		/>
+		<script src="/src/js/trial.js" defer></script>
+	</head>
+	<body class="container">
+		<!-- LOGIN FORM -->
+		<div class="login__container">
+			<div class="login__wrapper">
+				<h1 class="login__heading | heading">Sign In</h1>
+				<form class="login__form">
+					<label for="name" class="login__form--label">Email*</label>
+					<input
+						type="email"
+						name="name"
+						id="email"
+						class="login__form--email"
+						placeholder="Email*"
+						required
+					/>
+
+					<label for="password" class="login__form--label">Password*</label>
+					<input
+						type="password"
+						name="password"
+						id="password"
+						class="login__form--password"
+						placeholder="Password*"
+						required
+					/>
+					<button class="btn | login__form--btn" id="login-btn">Login</button>
+					<span id="errorMessage">&nbsp;</span>
+				</form>
+			</div>
+		</div>
+
+		<!-- HOME PAGE -->
+		<section class="homepage__container">
+			<h1 class="homepage__heading | heading--large">
+				Please choose your role:
+			</h1>
+
+			<p class="homepage__paragraph | paragraph">Please choose your role</p>
+			<div class="homepage__choice">
+				<div class="homepage__checkboxes">
+					<div>
+						<input
+							type="radio"
+							name="choice"
+							id="homepage__dealer--checkbox"
+							class="homepage__dealer--checkbox | homepage__input"
+							name="choice"
+						/>
+						<label class="homepage__label">
+							<span class="homepage__radio-button"></span>
+							Dealer</label
+						>
+					</div>
+
+					<div>
+						<input
+							type="radio"
+							name="choice"
+							id="homepage__player--checkbox"
+							class="homepage__player--checkbox | homepage__input"
+						/>
+						<label class="homepage__label">
+							<span class="homepage__radio-button"></span>
+							Player</label
+						>
+					</div>
+				</div>
+
+				<div class="homepage__stake--wrapper">
+					<p class="paragraph">Please enter stake:</p>
+					<input type="text" name="stake" id="stake" class="homepage__stake" />
+				</div>
+
+				<button
+					class="btn | homepage__btn | homepage__player--choice"
+					id="homepage__player--choice"
+				>
+					Enter
+				</button>
+			</div>
+		</section>
+
+		<!-- DEALER -->
+		<section class="game__conatiner">
+			<div class="game__conatiner--1">
+				<div class="game__wrapper">
+					<h1 class="game__heading | heading--large | heading">Player</h1>
+					<div class="game__wrapper--score">
+						<p class="paragraph | game__paragraph">
+							Cards : <span class="game__bet" id="player-card"></span>
+						</p>
+						<p class="paragraph | game__paragraph">Score</p>
+						<!-- <input -->
+						<!-- type="text" -->
+						<!-- name="card" -->
+						<!-- id="card" -->
+						<!-- class="game__card-choice" -->
+						<!-- /> -->
+
+						<span class="game__score-display" id="player-total">0</span>
+					</div>
+				</div>
+
+				<div class="game__wrapper">
+					<h1 class="game__heading | heading--large | heading">Dealer</h1>
+					<div class="game__wrapper--score">
+						<p class="paragraph | game__paragraph">
+							Cards : <span class="game__bet" id="dealer-card"></span>
+						</p>
+						<p class="paragraph | game__paragraph">Score</p>
+						<!-- <input -->
+						<!-- type="text" -->
+						<!-- name="card" -->
+						<!-- id="card" -->
+						<!-- class="game__card-choice" -->
+						<!-- /> -->
+						<span class="game__score-display" id="dealer-total">0</span>
+					</div>
+				</div>
+			</div>
+			<div class="game__display">
+				<p class="paragraph | game__paragraph | game__result">
+					Bet : $ <span class="game__bet" id="bet">0</span>
+				</p>
+
+				<div class="game__btn--wrapper">
+					<button class="game__btn | btn | game__btn--raise" id="stand">
+						Stand
+					</button>
+					<button class="game__btn | btn | game__btn--double" id="deal">
+						Deal
+					</button>
+					<button class="game__btn | btn | game__btn--raise" id="hit">
+						Hit
+					</button>
+					<button class="game__btn | btn | game__btn--double" id="double">
+						Double
+					</button>
+				</div>
+
+				<!-- <p class="paragraph | game__paragraph | game__result">Result</p> -->
+				<p class="game__display--output">Deal to begin game.</p>
+			</div>
+		</section>
+
+		<!-- Player -->
+		<!-- <section class="game__conatiner"> -->
+		<!-- <h1 class="game__heading | heading--large | heading">Player</h1> -->
+		<!-- <div class="game__btn--wapper"> -->
+		<!-- <button class="game__btn | btn | game__btn--bet" id="shuffleBtn"> -->
+		<!-- Shuffle -->
+		<!-- </button> -->
+		<!--  -->
+		<!-- <button class="game__btn | btn | game__btn--double">Double</button> -->
+		<!-- <button class="game__btn | btn | game__btn--double">My Cards</button> -->
+		<!-- </div> -->
+		<!-- </section> -->
+
+		<!-- error message -->
+		<!-- <div class="error"> -->
+		<!-- <div> -->
+		<!-- <p class="paragraph | errorMessage__paragraph | paragraph--red"> -->
+		<!-- Something went wrong 😞. Please try again... -->
+		<!-- </p> -->
+		<!-- </div> -->
+		<!-- <p class="paragraph | errorMessage__paragraph | paragraph--red">kkkk</p> -->
+		<!-- </div> -->
+	</body>
+</html>
