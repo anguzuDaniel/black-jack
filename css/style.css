@@ -1,0 +1,292 @@
+:root {
+  --clr-primary: rgb(59, 234, 59);
+  --clr-white: white;
+  --clr-green-dark: rgb(59, 234, 59);
+  --clr-green-light: rgb(145, 255, 145);
+  --shadow-1: 0 12px 18px rgba(0, 0, 0, 0.15);
+  --shadow-2: 0 12px 18px rgba(0, 0, 0, 0.345);
+  --clr-error: red;
+  --background-color: rgba(0, 0, 0, 0.585);
+  --form-bg-clr: rgba(0, 0, 0, 0.215);
+  --clr-num: rgb(201, 166, 77);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.heading {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.heading--large {
+  font-size: 5rem;
+}
+.heading--small {
+  font-size: 2.25rem;
+}
+
+.paragraph {
+  font-size: 2.25rem;
+  opacity: 0.6;
+}
+
+@keyframes btnAnimation {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(-25%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.btn {
+  cursor: pointer;
+  border: none;
+  padding: 1.25rem 4rem;
+  font-weight: bold;
+  background-color: var(--clr-primary);
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  color: white;
+  box-shadow: var(--shadow-1);
+  transition: all 0.25s ease-in-out;
+}
+.btn:active {
+  transform: scale(0.9) translateY(5px);
+}
+
+.error {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.login__container {
+  background-image: url("/src/images/20655.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  background-color: var(--background-color);
+  background-blend-mode: overlay;
+}
+.login__wrapper {
+  margin: 0 auto;
+  width: min(500px, 70%);
+  background-color: var(--form-bg-clr);
+  padding: 4rem 4rem;
+  box-shadow: var(--shadow-2);
+}
+.login__form--email, .login__form--password {
+  width: 100%;
+  padding: 1.2rem 1.8rem;
+  outline: none;
+  border: none;
+  border: 2px solid var(--clr-white);
+}
+.login__form--email:active, .login__form--password:active {
+  background-color: transparent;
+}
+.login__form--email {
+  margin-bottom: 1.25rem;
+}
+.login__form--password {
+  margin-bottom: 4rem;
+}
+.login__form--label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+.login__form--btn {
+  border-radius: 0;
+  text-transform: capitalize !important;
+  float: right;
+}
+.login__heading {
+  margin-bottom: 4rem;
+  color: var(--clr-white);
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#errorMessage {
+  color: var(--clr-error);
+  font-weight: 0.6rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.homepage__container {
+  background-image: url("/src/images/20655.jpg");
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  background-blend-mode: overlay;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+.homepage__choice {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-content: center;
+}
+.homepage__btn {
+  font-size: 1.8rem;
+  justify-content: center;
+}
+.homepage__heading {
+  margin-bottom: 6rem;
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.homepage__paragraph {
+  margin-bottom: 3rem;
+  color: var(--clr-white);
+  font-weight: bolder;
+}
+.homepage__checkboxes {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+.homepage__dealer--checkbox, .homepage__player--checkbox {
+  margin-right: 1.5rem;
+  cursor: pointer;
+  border-color: #39b385;
+}
+.homepage__label {
+  color: var(--clr-white);
+  font-size: 3rem;
+  opacity: 0.6;
+}
+.homepage__stake {
+  padding: 1rem;
+  outline: none;
+  width: 30%;
+}
+.homepage__stake--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game__conatiner {
+  background-image: url("/src/images/20655.jpg");
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  background-color: var(--background-color);
+  background-blend-mode: overlay;
+  transition: all 0.4s ease-in-out;
+}
+.game__conatiner--1 {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+}
+.game__wrapper--score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.game__wrapper :not(:last-child) {
+  margin-bottom: 20px;
+}
+.game__card-choice {
+  padding: 1rem 4rem;
+  outline: none;
+}
+.game__display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.game__display label {
+  margin-bottom: 2rem;
+}
+.game__display--output {
+  padding: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  color: var(--clr-num);
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.game__btn--wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+.game__score-display {
+  font-size: 6rem;
+  color: var(--clr-num);
+}
+.game__result {
+  margin-bottom: 2rem;
+}
+.game__paragraph {
+  color: #9be15d;
+}
+.game__bet {
+  color: var(--clr-num);
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

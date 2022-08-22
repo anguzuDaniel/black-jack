@@ -1,0 +1,79 @@
+.login {
+	&__container {
+		background-image: url("/src/images/20655.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 1;
+		transition: all 0.4s ease-in-out;
+		position: absolute;
+		z-index: 9999;
+		width: 100%;
+		background-color: var(--background-color);
+		background-blend-mode: overlay;
+	}
+
+	&__wrapper {
+		margin: 0 auto;
+		width: Min(500px, 70%);
+		background-color: var(--form-bg-clr);
+		padding: 4rem 4rem;
+		box-shadow: var(--shadow-2);
+	}
+
+	&__form {
+		&--email,
+		&--password {
+			width: 100%;
+			padding: 1.2rem 1.8rem;
+			outline: none;
+			border: none;
+			border: 2px solid var(--clr-white);
+		}
+
+		&--email:active,
+		&--password:active {
+			background-color: transparent;
+		}
+
+		&--email {
+			margin-bottom: 1.25rem;
+		}
+
+		&--password {
+			margin-bottom: 4rem;
+		}
+
+		&--label {
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(-4rem);
+		}
+
+		&--btn {
+			border-radius: 0;
+			text-transform: capitalize !important;
+			float: right;
+		}
+	}
+
+	&__heading {
+		margin-bottom: 4rem;
+		color: var(--clr-white);
+		background-image: linear-gradient(to top left, #39b385, #9be15d);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+	}
+}
+
+#errorMessage {
+	color: var(--clr-error);
+	font-weight: 0.6rem;
+	width: 100%;
+	margin-top: 1rem;
+}

@@ -1,0 +1,27 @@
+:root {
+	// PRIMARY COLORS
+	--clr-primary: rgb(59, 234, 59);
+
+	--clr-white: white;
+
+	--clr-green-dark: rgb(59, 234, 59);
+	--clr-green-light: rgb(145, 255, 145);
+
+
+
+	// SHADOWS
+	--shadow-1: 0 12px 18px rgba(0, 0, 0, 0.15);
+	--shadow-2: 0 12px 18px rgba(0, 0, 0, 0.345);
+
+	// error message color
+	--clr-error: red;
+
+	// background color
+	--background-color: rgba(0, 0, 0, 0.585);
+
+	// form color
+	--form-bg-clr: rgba(0, 0, 0, 0.215);
+
+	// num-color
+	--clr-num: rgb(201, 166, 77);
+}
