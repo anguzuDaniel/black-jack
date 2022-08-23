@@ -6,21 +6,21 @@ ABOUT GAME!!
     3. Vanilla javaScript
 
 # Note:
-- BlackJack is a house game, which means that when you win, the house, and when you loses, and when you lose, the house wins.
-    Poker is player is a player banked game, as the house has no interest at all in pot, they just take out a small percentage as a fee, and the winning and         losung        of   money s strictly between the players.
+- BlackJack is a house game, which means that when you lose, the house wins, and when you loses, the house wins.
+    Blackjack is a player banked game, as the house has no interest at all in pot, they just take out a small percentage as a fee, and the winning and         losung        of   money s strictly between the players.
     In blackjack the dealer is someone appionted at a grambling table to assit in the conduct of the games, especially in the distibution of bed and payouts.
     Dealler/ Croupies are typically employedd by casino.
 
-![Image of the Home page](/images/blackjack_homepage.PNGimages?raw=true "Home page")
+![Image of the Home page](/images/blackjack_homepage.PNG?raw=true "Home page")
 
-# you will need to logi n to be able to try this game
-- email: account@gmail.com
-- paswword: 1234
+# you will need to login to be able to try this game
+  - email: account@gmail.com
+  - paswword: 1234
 
 ![Image of the login page](/images/blackjack_login.PNG?raw=true "Login page")
 
 # HOW TO PLAY
-    1. To ply your first hand you add the card values together and get a hand total anywhere from 4 to 21.
+    1. To play your first hand you add the card values together and get a hand total anywhere from 4 to 21.
     2. if your've dealt a ten value card and an Ace your  tow cards that mean you get a blackjack.
 
 ![Image of the player homepage](/images/blackjack_player_page.PNG?raw=true "Homepage")
