@@ -27,6 +27,9 @@ html {
 body {
   font-size: 18px;
   font-size: 1.8rem;
+  font-family: "El Messiri", sans-serif;
+  font-family: "EB Garamond", serif;
+  font-family: "Salsa", cursive;
 }
 
 .heading {
@@ -175,7 +178,8 @@ body {
 }
 .homepage__btn {
   font-size: 1.8rem;
-  justify-content: center;
+  display: flex;
+  align-self: center;
 }
 .homepage__heading {
   margin-bottom: 6rem;
@@ -185,8 +189,7 @@ body {
   color: transparent;
 }
 .homepage__paragraph {
-  margin-bottom: 3rem;
-  color: var(--clr-white);
+  color: var(--clr-num);
   font-weight: bolder;
 }
 .homepage__checkboxes {
@@ -213,6 +216,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.homepage__display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homepage__display--output {
+  padding: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  color: var(--clr-num);
+  text-align: center;
+  transition: all 0.2s ease-in-out;
 }
 
 .game__conatiner {

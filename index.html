@@ -5,6 +5,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>BlackJack</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=El+Messiri&family=Salsa&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
 		<!-- <script type="module" src="./src/js/controller.js" defer></script> -->
 		<link
@@ -12,7 +18,7 @@
 			type="image/png"
 			href="src/images/vector-calligraphy-illustration-isolated-white-background_98908-696.jpg"
 		/>
-		<script src="/src/js/trial.js" defer></script>
+		<script src="/src/js/script.js" defer></script>
 	</head>
 	<body class="container">
 		<!-- LOGIN FORM -->
@@ -51,7 +57,9 @@
 				Please choose your role:
 			</h1>
 
-			<p class="homepage__paragraph | paragraph">Please choose your role</p>
+			<p class="homepage__paragraph | paragraph" style="margin-bottom: 3rem">
+				Please choose your role
+			</p>
 			<div class="homepage__choice">
 				<div class="homepage__checkboxes">
 					<div>
@@ -83,7 +91,7 @@
 				</div>
 
 				<div class="homepage__stake--wrapper">
-					<p class="paragraph">Please enter stake:</p>
+					<p class="paragraph | homepage__paragraph">Please enter stake:</p>
 					<input type="text" name="stake" id="stake" class="homepage__stake" />
 				</div>
 
@@ -94,6 +102,7 @@
 					Enter
 				</button>
 			</div>
+			<p class="homepage__display--output">&nbsp;</p>
 		</section>
 
 		<!-- DEALER -->
