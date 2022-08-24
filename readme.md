@@ -6,7 +6,7 @@ ABOUT GAME!!
     3. Vanilla javaScript
 
 # Note:
-- BlackJack is a house game, which means that when you lose, the house wins, and when you loses, the house wins.
+- BlackJack is a house game, which means that when you lose, the house wins, and when you win, the house loses.
     Blackjack is a player banked game, as the house has no interest at all in pot, they just take out a small percentage as a fee, and the winning and         losung        of   money s strictly between the players.
     In blackjack the dealer is someone appionted at a grambling table to assit in the conduct of the games, especially in the distibution of bed and payouts.
     Dealler/ Croupies are typically employedd by casino.
@@ -30,16 +30,17 @@ ABOUT GAME!!
 This is used ny the deale to carrout deals, Deals one card to each player followed by a down card to the the dealer.
 
 - STAND BUTTON
- When plating balckjack there are two options, to hit or to stand.
+
+ When playing blackjack there are two options, to hit or to stand.
 
  To hit is an instruction given to request an extra card and be indicated in verbal or by simply tapping the table.
  To stand is to hold your total the table.
- To stand is to hold your total and end your turn, to earn do this by waving your hand horizonatl.
+ To stand is to hold your total and end your turn, to earn do this by waving your hand horizontally.
  - this has been sitmulated using the hit buttton - to hit you just click the hit button.
 
 # NOTE:
     id dealer goes over 21, the dealer pays each player who stood the amount of that bet.
-    if the dealer stands 21 or less the dealer pays the bet of any palyer havinf a higher total not execeeding 21 and collects the best of any player having a lower total.
+    if the dealer stands 21 or less the dealer pays the bet of any palyer having a higher total not execeeding 21 and collects the best of any player having a lower total.
 
 # ROLES
 # DEALER
@@ -53,7 +54,7 @@ This is used ny the deale to carrout deals, Deals one card to each player follow
 - hit
 
 # Backend
-The back end to this implementaion is written in reach langaunge
+The backend to this implementaion is written in reach langaunge
     - Reach is a language that makes it easy for developers to create DApp( Decentralized Application ).
 
 
